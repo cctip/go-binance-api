@@ -111,6 +111,10 @@ type Network struct {
 	WithdrawMax             string `json:"withdrawMax"`
 	WithdrawMin             string `json:"withdrawMin"`
 	SameAddress             bool   `json:"sameAddress"` // 是否需要memo
+	EstimatedArrivalTime    int64  `json:"estimatedArrivalTime"`
+	Busy                    bool   `json:"busy"`
+	ContractAddressUrl      string `json:"contractAddressUrl"`
+	ContractAddress         string `json:"contractAddress"` //合约地址
 }
 
 // GetUserAssetService Get user assets
